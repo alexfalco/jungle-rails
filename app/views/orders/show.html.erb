@@ -21,9 +21,10 @@
 
     
     <% @line_items.each do |line_item| %>
-      <p> <%=line_item %> </p>
+      <% product = Product.find(line_item.product_id) %>
+      <%= render 'line_item', product: product, line_item:line_item %>
+      
       <% end %>
-
 
   
       </tbody>
