@@ -9,3 +9,6 @@
 2. Once Any Sale is active, display it on the products#index page (home page) and affect the prices
 
 EDD
+
+Example to create a controller!
+bin/rails g controller admin/sales
